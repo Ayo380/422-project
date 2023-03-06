@@ -29,6 +29,7 @@
     color: black;
     border: none;
     padding: 10px 20px;
+    text-decoration: none; 
     font-size: 16px;
     cursor: pointer;
   }
@@ -115,6 +116,64 @@
   letter-spacing: .09em;
   border-radius: 2px;
 }
+
+/* the preview stying for textprompt page */
+
+.preview_header{
+  text-align: center;
+  background :black ;
+  color : white
+}
+
+/* Clear floats after image containers */
+ /* css block for portfolio */
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+/* navigation bar */
+.navigation {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.navigation a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navigation a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navigation a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.logo_head2{
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
 
 
 
