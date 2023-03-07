@@ -6,6 +6,7 @@
     height: 100vh;
     background-color: white;
   }
+  
 .welcome{
     color: black;
 }
@@ -14,10 +15,8 @@
   }
 .logo_head{
     display: flex;
-    /* position: fixed; */
     top: 0;
     left: 0;
-    padding: 20px;
 }
 .logo{
     max-width: 100%;
@@ -41,7 +40,6 @@
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
     background: whitesmoke;
     color: black;
-    padding: 50px 0;
   }
 
   .container {
@@ -122,18 +120,20 @@
 .preview_header{
   text-align: center;
   background :black ;
-  color : white
+  color : white;
+  margin-bottom: 10px;
 }
 
 /* Clear floats after image containers */
  /* css block for portfolio */
 .row {
   display: flex;
+  justify-content: space-evenly;
+
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
-  flex: 33.33%;
   padding: 5px;
 }
 
@@ -145,6 +145,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -171,10 +172,103 @@
 
 .logo_head2{
   text-align: center;
+  margin-right: auto;
   /* margin-top: 10px; */
 }
 
 
+.containerWindow{
+  display: flex;
+  gap: 5%;
+}
 
+.inputWindow{
+  float: left;
+  width: 30%;
+}
 
+.previewWindow{
+  flex: 50%;
   
+}
+
+.rowItem{
+  flex: 50%;
+}
+
+.footerBar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color: black;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerBar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.wordContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.wordItem {
+  background-color: rgb(139, 130, 130);
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  flex-basis: 25%;
+  text-align: center;
+}
+
+/*From: https://www.w3schools.com/howto/howto_js_rangeslider.asp*/
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }

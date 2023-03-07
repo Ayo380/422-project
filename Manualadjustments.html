@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8">
+      <title>Manual Adjustments</title>
+  
+      <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  
+  <div class="navigation">
+    <div class = "logo_head2">
+      <img class = "logo"src="logo.png" alt="Logo" style="width: 50%;">
+    </div>
+    <a href="./Textprompt.html">Text Prompt</a>
+    <a href="./Refineoptions.html">Refine Options</a>
+    <a href="./Manualadjustments.html">Manual Adjustments</a>
+    <a href="./Preview.html">Preview</a>
+  </div>
+
+  <body class = "textpage_body">
+    <div class = "containerWindow">
+      
+      <div class = inputWindow>
+        <header class = "preview_header"> Inputs </header>  
+        <div>
+          <header class = "preview_header"> Brightness/Contrast </header>  
+          <label>Brightness</label>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+          <label>Contrast</label>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+        </div>
+
+        <div>
+          <header class = "preview_header"> Hue/Saturation </header>  
+          <label>Hue</label>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+          <label>Saturation</label>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+        </div>
+
+        <div>
+          <header class = "preview_header"> Exposure </header>  
+          <label>Exposure</label>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+        </div>
+
+        <div>
+          <header class = "preview_header"> Invert Colors </header>  
+        </div>
+        
+      </div>
+      
+      <div class="previewWindow">
+        <header class = "preview_header"> Preview </header>  
+        <div class="row">
+            <img src="projectimage.jpg" alt="Snow" style="width:75%; padding: 30px;">
+        </div>
+      </div>
+
+      <div class="footerBar">
+        <a href="./Refineoptions.html">Previous</a>
+        <a href="./Preview.html">Next</a>
+      </div>
+
+    </div>
+  </body>
+
+</html>
