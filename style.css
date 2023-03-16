@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: white;
+    background-color: #f2f2f2;
   }
   
 .welcome{
@@ -31,6 +31,7 @@
     text-decoration: none; 
     font-size: 16px;
     cursor: pointer;
+    border-radius: 15px;
   }
 
 
@@ -122,6 +123,7 @@
   background :black ;
   color : white;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 /* Clear floats after image containers */
@@ -148,6 +150,11 @@
   align-items: center;
 }
 
+.navigation img {
+  padding: 10px;
+  width: 10%
+}
+
 /* Style the links inside the navigation bar */
 .navigation a {
   float: left;
@@ -168,12 +175,6 @@
 .navigation a.active {
   background-color: #04AA6D;
   color: white;
-}
-
-.logo_head2{
-  text-align: center;
-  margin-right: auto;
-  /* margin-top: 10px; */
 }
 
 
@@ -275,4 +276,5 @@
 
 .exportButton {
   width: 100%;
+  border-radius: 5px;
 }
